@@ -96,7 +96,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     Androidian \
     Cyanbread 
-
+#Board
+PRODUCT_COPY_FILES += \
+    device/samsung/apollo/init.rc:root/init.rc \
+	
 # Bluetooth MAC Address
 PRODUCT_PACKAGES += \
     bdaddr_read
@@ -172,6 +175,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0 \
     dalvik.vm.checkjni=false
+	
 
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := full_apollo
