@@ -98,7 +98,7 @@ PRODUCT_PACKAGES += \
     Cyanbread 
 #Board
 PRODUCT_COPY_FILES += \
-    device/samsung/apollo/init.rc:root/init.apollo.rc \
+    $(LOCAL_PATH)/init.apollo.rc:root/init.apollo.rc \
 	
 # Bluetooth MAC Address
 PRODUCT_PACKAGES += \
