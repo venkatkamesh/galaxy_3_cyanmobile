@@ -1,3 +1,0 @@
-# binary key to unlock rom
-setprop ro.squadzone.build 1
-setprop persist.sys.gmaps_hack 1
